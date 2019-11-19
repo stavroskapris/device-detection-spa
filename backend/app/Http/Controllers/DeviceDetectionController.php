@@ -13,7 +13,6 @@ use Illuminate\Http\JsonResponse;
  * @package App\Http\Controllers
  */
 /** @noinspection PhpUnused */
-
 class DeviceDetectionController extends Controller
 {
     /**
