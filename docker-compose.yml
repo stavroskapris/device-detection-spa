@@ -16,6 +16,7 @@ services:
 # Creating container Nginx
 ####################################################################################################
   nginx:
+    container_name: nginx
     image: nginx:latest
     ports:
       - 8080:80
