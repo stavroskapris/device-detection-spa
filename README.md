@@ -12,6 +12,7 @@ docker-compose build
 ### Project run
 ```
 docker-compose up
+visit http://localhost:8081/
 ```
 ### Project stop
 ```
