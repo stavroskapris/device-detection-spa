@@ -1,5 +1,4 @@
 body {
-    /*background: #263238;*/
     background: whitesmoke;
 }
 
@@ -16,138 +15,113 @@ body {
 /*          Device styles                  */
 /*******************************************/
 
-.tdevices, .tdevice-item {
-    min-height: 55px;
-    padding: 10px 0 0 0;
-}
 
-.tdevice-item-header {
+.pnd-device {
     height: 55px;
     position: relative;
-    font-size: 15px;
-    padding-left: 65px;
-    display: block;
 }
 
-.tdevice-item-link {
-    display: block;
-    font-size: 15px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 100;
-}
-
-.mbr-device-icon, .mbr-browser-icon {
+.pnd-device-icon, .pnd-browser-icon {
     position: absolute;
     background: transparent url("../images/devices_v1.png") no-repeat 0 -427px;
+    margin-left: 41em;
 }
 
-.mfa-device-title {
-    font-size: 15px;
-    color: #0a0a0a;
-}
-
-.mfa-device-last-login {
-    font-size: 12px;
-    padding-top: 5px;
-}
-
-.mbr-browser-icon {
+.pnd-browser-icon {
     left: 0;
     top: 0;
     width: 27px;
     height: 25px;
 }
 
-.mbr-device-icon {
+.pnd-device-icon {
     left: 0;
     top: 0;
     width: 60px;
     height: 40px;
 }
 
-.mbr-device-icon-mobile {
+.pnd-device-icon-mobile {
     background-position: 0 -309px
 }
 
-.mbr-device-icon-desktop {
+.pnd-device-icon-desktop {
     background-position: 0 -351px
 }
 
-.mbr-device-icon-tablet {
+.pnd-device-icon-tablet {
     background-position: 0 -387px;
     height: 32px
 }
 
-.mbr-device-icon-mobile-iphone {
+.pnd-device-icon-mobile-iphone {
     background-position: 0 1px
 }
 
-.mbr-device-icon-mobile-android {
+.pnd-device-icon-mobile-android {
     background-position: 0 -39px
 }
 
-.mbr-device-icon-mobile-windows {
+.pnd-device-icon-mobile-windows {
     background-position: 0 -79px
 }
 
-.mbr-device-icon-mobile-linux {
+.pnd-device-icon-mobile-linux {
     background-position: 0 -763px
 }
 
-.mbr-device-icon-desktop-mac {
+.pnd-device-icon-desktop-mac {
     background-position: 0 -118px
 }
 
-.mbr-device-icon-desktop-windows {
+.pnd-device-icon-desktop-windows {
     background-position: 0 -157px
 }
 
-.mbr-device-icon-desktop-linux {
+.pnd-device-icon-desktop-linux {
     background-position: 0 -805px
 }
 
-.mbr-device-icon-tablet-ipad {
+.pnd-device-icon-tablet-ipad {
     background-position: 0 -197px
 }
 
-.mbr-device-icon-tablet-windows {
+.pnd-device-icon-tablet-windows {
     background-position: 0 -237px
 }
 
-.mbr-device-icon-tablet-android {
+.pnd-device-icon-tablet-android {
     background-position: 0 -277px
 }
 
-.mbr-device-icon-tablet-linux {
+.pnd-device-icon-tablet-linux {
     background-position: 0 -841px
 }
 
-.mbr-browser-icon-firefox {
+.pnd-browser-icon-firefox {
     background-position: 0 -489px
 }
 
-.mbr-browser-icon-chrome {
+.pnd-browser-icon-chrome {
     background-position: 0 -514px
 }
 
-.mbr-browser-icon-internetexplorer {
+.pnd-browser-icon-internetexplorer {
     background-position: 0 -539px
 }
 
-.mbr-browser-icon-safari {
+.pnd-browser-icon-safari {
     background-position: 0 -563px
 }
 
-.mbr-browser-icon-android {
+.pnd-browser-icon-android {
     background-position: 0 -588px
 }
 
-.mbr-browser-icon-edge {
+.pnd-browser-icon-edge {
     background-position: 0 -710px
 }
 
-.mbr-browser-icon-opera {
+.pnd-browser-icon-opera {
     background-position: 0 -735px
 }
