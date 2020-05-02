@@ -6,7 +6,11 @@ This is a dockerized Vuejs and Lumen SPA
 
 ### Project setup
 ```
-cd backend composer install
+From project root run 
+npm install
+cd backend 
+composer install
+cd ..
 docker-compose build
 ```
 ### Project run
