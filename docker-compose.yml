@@ -5,7 +5,7 @@ services:
   # Creating container PHP
   ####################################################################################################
   php:
-    container_name: backend
+    container_name: device_detect_backend
     build: ./backend
     ports:
       - "9000:9000"
@@ -16,19 +16,19 @@ services:
 # Creating container Nginx
 ####################################################################################################
   nginx:
-    container_name: nginx
+    container_name: device_detect_nginx
     image: nginx:latest
     ports:
       - 8080:80
     volumes:
-      - ./image/nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
     links:
       - php
   ####################################################################################################
   # Creating container frontend
   ####################################################################################################
   frontend:
-    container_name: frontend
+    container_name: device_detect_frontend
     build:
       context: .
       dockerfile: Dockerfile

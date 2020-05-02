@@ -18,7 +18,7 @@ class DeviceDetectionController extends Controller
     /**
      * Exception
      */
-    const EXCEPTION_TYPE = 'DeviceDetectionController';
+    protected const EXCEPTION_TYPE = 'DeviceDetectionController';
 
     /**
      * @var Device_Detect
@@ -44,12 +44,12 @@ class DeviceDetectionController extends Controller
         try {
             return response()->json(
                 [
-                    'browser'         => $this->deviceDetect->getBrowser(),
+                    'browser' => $this->deviceDetect->getBrowser(),
                     'operatingSystem' => $this->deviceDetect->getOperatingSystem(),
-                    'deviceType'      => $this->deviceDetect->getDeviceType(),
+                    'deviceType' => $this->deviceDetect->getDeviceType(),
                 ],
                 200,
-                ["Access-Control-Allow-Origin" => 'http://localhost:8081']
+                ['Access-Control-Allow-Origin' => 'http://localhost:8081']
             );
         } catch (Exception $e) {
             LogExceptions::log($e, self::EXCEPTION_TYPE);

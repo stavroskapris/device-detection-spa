@@ -4,16 +4,18 @@
             <div :class="`pnd-device-icon pnd-device-icon-${device.deviceType} pnd-device-icon-${device.deviceType}-${device.operatingSystem.toLowerCase()}`"></div>
             <div :class="`pnd-browser-icon pnd-browser-icon-${device.browser.toLowerCase()}`"></div>
         </div>
-        <p class="">{{device.browser}}</p>
-        <p class="">{{device.operatingSystem}}</p>
-        <p class="">{{device.deviceType}}</p>
+        <div class="device-info">
+            <p class="">{{device.browser}}</p>
+            <p class="">{{device.operatingSystem}}</p>
+            <p class="">{{device.deviceType}}</p>
+        </div>
     </div>
 </template>
 <script>
     export default {
         data() {
             return {
-                device: {}
+                device: {},
             }
         },
         methods: {
@@ -24,7 +26,7 @@
             }
         },
         created() {
-            this.getDevice()
+            this.getDevice();
         }
     }
 </script>

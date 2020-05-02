@@ -1,13 +1,16 @@
 <template>
-  <div id="app">
-    <h3>{{title}}</h3>
-    <div class="row">
-      <Device/>
+    <div class="container">
+        <div id="app">
+            <h3>{{title}}</h3>
+            <hr>
+            <div class="row">
+                <Device/>
+            </div>
+        </div>
     </div>
-  </div>
 </template>
 <style>
-  @import './assets/css/index.css';
+    @import './assets/css/index.css';
 </style>
 <script>
 

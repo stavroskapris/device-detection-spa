@@ -17,14 +17,18 @@ body {
 
 
 .pnd-device {
-    height: 55px;
     position: relative;
+    left: 48%;
+}
+
+.device-info {
+    position: relative;
+    top: 50%;
 }
 
 .pnd-device-icon, .pnd-browser-icon {
     position: absolute;
     background: transparent url("../images/devices_v1.png") no-repeat 0 -427px;
-    margin-left: 41em;
 }
 
 .pnd-browser-icon {
