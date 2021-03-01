@@ -12,7 +12,6 @@ use Illuminate\Http\JsonResponse;
  *
  * @package App\Http\Controllers
  */
-/** @noinspection PhpUnused */
 class DeviceDetectionController extends Controller
 {
     /**
@@ -44,9 +43,9 @@ class DeviceDetectionController extends Controller
         try {
             return response()->json(
                 [
-                    'browser' => $this->deviceDetect->getBrowser(),
+                    'browser'         => $this->deviceDetect->getBrowser(),
                     'operatingSystem' => $this->deviceDetect->getOperatingSystem(),
-                    'deviceType' => $this->deviceDetect->getDeviceType(),
+                    'deviceType'      => $this->deviceDetect->getDeviceType(),
                 ],
                 200,
                 ['Access-Control-Allow-Origin' => 'http://localhost:8081']
